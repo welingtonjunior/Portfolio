@@ -16,7 +16,6 @@
     <header>
         <div class="container">
             <div class="row">
-                
                 <div class="col box">
                     <ul class="d-flex justify-content-center align-items-center">
                         <li class="nav-item"><a class="nav-link active" href="">Home</a></li>
@@ -24,10 +23,21 @@
                         <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
                         <li class="nav-item"><a class="nav-link" href="./cadastro.html">Cadastro</a></li>
-                   </ul>
-                </div>
-            
+                        <div class="d-flex justify-content-end">
+                            <div class="tema-claro">
+                                <button type="button" class="btn btn-outline-dark mx-1" id="fd-claro">Light</button>
+                            </div>
+                            <div class="tema-escuro ml-2">
+                                <button type="button" class="btn btn-outline-dark mx-1" id="fd-escuro">Dark</button>
+                            </div>
+                        </div> 
+                    
+                    
+                    </ul>
+                    
+                </div>             
             </div>
+            
         </div>
 
     </header>
@@ -54,28 +64,31 @@
                         <p>Sou um desenvolvedor full stack iniciante compartilhando projetos e habilidades em HTML, CSS, JavaScript, Python, React, Django e Node.js. Atualizo meu portfólio com novos projetos e estou sempre aprendendo. Vamos colaborar em projetos desafiadores juntos!</p>
                     </div>
                 </div>
-                <div class="redes justify-content-start">
-                    <ul class="d-flex  align-items-center">
-                        <li>
-                            <a href="https://github.com/welingtonjunior" target="_blank">
-                                <img src="./image/git.png" alt="github">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/welington-fagundes-486138179/" target="_blank">
-                                <img src="./image/linkedin.png" alt="linkedin">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/juniormfagundes/" target="_blank">
-                                <img src="./image/insta.png" alt="instagram">
-                            </a>
-                        </li>
-                   </ul>
-                </div>
+                
                 </div>
 
             </div>
+            <div class="redes float-right justify-content mt-auto">
+                <ul class="d-flex align-items-center col-md-4">
+                    <li>
+                        <a href="https://github.com/welingtonjunior" target="_blank">
+                            <img src="./image/git.png" alt="github">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/welington-fagundes-486138179/" target="_blank">
+                            <img src="./image/linkedin.png" alt="linkedin">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/juniormfagundes/" target="_blank">
+                            <img src="./image/insta.png" alt="instagram">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+        
         </div>
     </section>
       
@@ -402,6 +415,23 @@
         pause: false,
         interval: 5000
     })
+    const fundoClaro = document.querySelector('#fd-claro');
+    const fundoEscuro = document.querySelector('#fd-escuro');
+    const body = document.body;
+    let corOriginal = body.style.backgroundColor;
+
+    fundoClaro.addEventListener('click', function() {
+  
+     body.style.backgroundColor = '#fff'; // cor branca
+    
+    });
+
+    fundoEscuro.addEventListener('click', function() {
+    
+     body.style.backgroundColor = '#a4a4a5ba';
+    
+    });
+
 </script>
 </body>
 </html>

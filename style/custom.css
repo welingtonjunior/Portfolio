@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
+
 html {
     scroll-behavior: smooth;
   }
@@ -65,29 +66,27 @@ ul {
     list-style: none;
 }
 
-#apresentacao h1{
-    text-align: center;
-    font-size: 60px;
+#apresentacao h1 {
+    margin-left: 59px;
+    text-align: left;
+    font-size: 43px;
     font-family: 'Montserrat', sans-serif;
-    margin-bottom: 2px;
+    margin-bottom: 0px;
     letter-spacing: 2px;
-    padding: 21px 0;
-    color: #2a2a2a;
+    padding: 15px 0;
+    color: #000000;
 }
 header h1{
     text-align: center;
     border: 2px solid #abb7f1;
 }
-#apresentacao p{
-    font-size: 17px;
-    margin-left: 0px;
-    font-family: 'Lato', sans-serif;
+
+#apresentacao h2 {
     text-align: left;
-    
-}
-h2{
-    text-align: center;
-    font-size: 3rem;
+    font-size: 10rem;
+    letter-spacing: -20px;
+    margin-top: -23px;
+    color: black;
 }
 .box-texto {
     text-align: center;
@@ -291,12 +290,12 @@ input, textarea {
     height: 71px;
     margin: 33px;
     margin-left: 52px;
-    margin-top: -79px;
-    box-shadow: 27px 16px 16px #abb7f1ba;
+    
+  
 }
 .redes img:hover {
     filter: blur(5px);
-    box-shadow: 27px 16px 16px #fcfdff;
+    
 }
 
 .card-img-top {

@@ -96,44 +96,7 @@ html {
     opacity: 0.7; 
     transition: opacity 0.3s ease-in-out; 
 }
-#sobre {
-    width: 60%;
-    margin: 0 auto; 
-    text-align: center;
-    color: #333;
-    background-color: #f7f7f7;
-    margin-top: 61px;
-    padding: 32px;
-    border-radius: 10px;
-    transition: all 0.3s ease-in-out;
-    font-family: Arial, sans-serif;
-}
-  
-#sobre h2 {
-    margin-bottom: 16px;
-    font-size: 2rem;
-}
-  
-#sobre p {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    margin-bottom: 24px;
-}
-  
-#sobre p:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-}
-  
-#sobre-container {
-    display: flex;
-    justify-content: center;
-}
-  
-#sobre-container > * {
-    margin: auto;
-}
-  
+
 section {
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -216,7 +179,7 @@ body {
 #projetos h5 {
     color: #ffffff;
     font-size: 2rem;
-    border-bottom: 1px solid #ffffff;
+    text-decoration: underline;
 }
 #projetos p {
     color: #ffffff;
